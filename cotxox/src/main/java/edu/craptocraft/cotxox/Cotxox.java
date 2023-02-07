@@ -1,7 +1,7 @@
 package edu.craptocraft.cotxox;
 
 import edu.craptocraft.cotxox.carrera.*;
-import edu.craptocraft.conductores.*;
+import edu.craptocraft.cotxox.conductores.*;
 
 import java.util.List;
 import java.util.ArrayList;

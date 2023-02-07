@@ -1,8 +1,8 @@
 package edu.craptocraft.cotxox.carrera;
 
+import edu.craptocraft.cotxox.conductores.Conductor;
+import edu.craptocraft.cotxox.conductores.PoolConductores;
 import edu.craptocraft.cotxox.tarifa.Tarifa;
-import edu.craptocraft.conductores.Conductor;
-import edu.craptocraft.conductores.PoolConductores;
 
 public class Carrera {
 
