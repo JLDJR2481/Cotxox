@@ -1,5 +1,7 @@
 package edu.craptocraft.cotxox.carrera;
 
+import edu.craptocraft.cotxox.tarifa.Tarifa;
+
 public class Carrera {
 
     private String tarjetaCredito;
@@ -38,5 +40,17 @@ public class Carrera {
 
     public double getDistancia() {
         return this.distancia;
+    }
+
+    public void setTiempoEsperado(int tiempoEsperado) {
+        this.tiempoEsperado = tiempoEsperado;
+    }
+
+    public int getTiempoEsperado() {
+        return this.tiempoEsperado;
+    }
+
+    public double getCosteEsperado() {
+        return Tarifa.getCosteTotalEsperado(this);
     }
 }

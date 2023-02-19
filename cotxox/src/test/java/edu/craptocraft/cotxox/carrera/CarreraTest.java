@@ -2,7 +2,6 @@ package edu.craptocraft.cotxox.carrera;
 
 import static org.junit.Assert.*;
 
-import org.junit.Before;
 import org.junit.Test;
 
 public class CarreraTest {
@@ -48,5 +47,14 @@ public class CarreraTest {
         carrera.setDistancia(distancia);
 
         assertNotNull(distancia);
+    }
+
+    @Test
+    public void tiempoEsperadoTest() {
+        carrera.setTiempoEsperado(tiempoEsperado);
+
+        assertNotNull(tiempoEsperado);
+
+        assertEquals(tiempoEsperado, carrera.getTiempoEsperado());
     }
 }
