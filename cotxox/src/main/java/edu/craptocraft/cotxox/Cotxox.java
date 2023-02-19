@@ -1,7 +1,7 @@
 package edu.craptocraft.cotxox;
 
 import edu.craptocraft.cotxox.carrera.Carrera;
-import edu.craptocraft.cotxox.tarifa.Tarifa;
+
 import edu.craptocraft.cotxox.conductores.Conductor;
 import edu.craptocraft.cotxox.conductores.PoolConductores;
 
@@ -100,17 +100,17 @@ public class Cotxox {
         // cancel ride
         // contact by phone
 
-        // System.out.println("\n#####" + "\t Pay and Tip: \t" + "#####\n");
+        System.out.println("\n#####" + "\t Pay and Tip: \t" + "#####\n");
 
-        // carrera.realizarPago(carrera.getCosteEsperado());
-        // carrera.recibirPropina(1);
-        // carrera.liberarConductor();
+        carrera.realizarPago(carrera.getCosteEsperado());
+        carrera.recibirPropina(1);
+        carrera.liberarConductor();
 
-        // System.out.println("Driver: " + carrera.getConductor().getNombre());
-        // System.out.println("TIP: " + carrera.getPropina());
-        // System.out.println("Visa: " + carrera.getTarjetaCredito());
-        // System.out.println("Total: " + carrera.getCosteTotal());
-        // System.out.println("Ocupado?: " + carrera.getConductor().isOcupado());
+        System.out.println("Driver: " + carrera.getConductor().getNombre());
+        System.out.println("TIP: " + carrera.getPropina());
+        System.out.println("Visa: " + carrera.getTarjetaCredito());
+        System.out.println("Total: " + carrera.getCosteTotal());
+        System.out.println("Ocupado?: " + carrera.getConductor().isOcupado());
 
         // System.out.println("\n#####" + "\t Rate your driver: \t" + "#####\n");
 

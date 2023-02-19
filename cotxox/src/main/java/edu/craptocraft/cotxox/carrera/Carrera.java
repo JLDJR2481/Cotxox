@@ -11,6 +11,8 @@ public class Carrera {
     private String destino;
     private double distancia = 0d;
     private int tiempoEsperado;
+    private double costeTotal;
+    private int propina = 0;
 
     private Conductor conductor;
 
@@ -68,5 +70,25 @@ public class Carrera {
 
     public void asignarConductor(PoolConductores conductores) {
         setConductor(conductores.asignarConductor());
+    }
+
+    public void realizarPago(double pago) {
+        this.costeTotal = pago;
+    }
+
+    public double getCosteTotal() {
+        return this.costeTotal;
+    }
+
+    public void recibirPropina(int propina) {
+        this.propina = propina;
+    }
+
+    public int getPropina() {
+        return this.propina;
+    }
+
+    public void liberarConductor() {
+        conductor.setOcupado(false);
     }
 }

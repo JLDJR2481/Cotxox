@@ -1,12 +1,9 @@
-package edu.craptocraft.conductores;
+package edu.craptocraft.cotxox.conductores;
 
 import java.util.ArrayList;
 import java.util.List;
 
 import org.junit.Test;
-
-import edu.craptocraft.cotxox.conductores.Conductor;
-import edu.craptocraft.cotxox.conductores.PoolConductores;
 
 public class PoolConductoresTest {
 
